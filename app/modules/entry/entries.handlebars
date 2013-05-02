@@ -1,0 +1,43 @@
+{{#if loaded}}
+  <div class='thank-yous'>
+    {{#each content}}
+      {{#unless hide}}
+        <div class='thank-you'>
+          <h3>{{author}}</h3>
+          <div class='body'>
+            {{markdown body}}
+          </div>
+        </div>
+      {{/unless}}
+    {{/each}}
+  </div>
+  
+  <div class="bottom well">
+    <h2>Submit Your Entry</h2>
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="author">Your name</label>
+        <div class="controls">
+          <input type="text" id="author">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="body">Your entry<br/>(you can use markdown!)</label>
+        <div class="controls">
+          <textarea id="body"></textarea>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <button class="btn btn-primary" {{action "save" target="view"}}>Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="success" style="display:none">
+      <p>Your entry has been posted! If you made a mistake, tell Thomas and he&apos;ll <del>begrudgingly</del> happily take care of it.</p>
+    </div>
+  </div>
+{{else}}
+  Loading...
+{{/if}}

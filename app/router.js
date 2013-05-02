@@ -1,0 +1,2 @@
+Guestbook.Router.map(function() {
+});

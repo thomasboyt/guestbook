@@ -1,0 +1,16 @@
+{
+  "name": "guestbook",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "~2.0.0",
+    "handlebars": "~1.0.0-rc.3",
+    "ember": "http://builds.emberjs.com.s3.amazonaws.com/ember-latest.js",
+    "ember-data": "http://builds.emberjs.com.s3.amazonaws.com/ember-data-latest.js",
+    "ember-firebase-adapter": "https://raw.github.com/thomasboyt/ember-firebase-adapter/master/dist/firebase_adapter.js",
+    "marked": "https://raw.github.com/chjj/marked/master/lib/marked.js"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "chai": "~1.5.0"
+  }
+}

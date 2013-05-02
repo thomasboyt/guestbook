@@ -1,0 +1,43 @@
+/* Put your CSS here */
+html, body {
+    margin: 20px;
+}
+
+#container {
+  width:600px;
+  margin:0 auto;
+}
+
+.thank-you {
+  border-bottom:1px #777 solid;
+}
+.thank-you:last-of-type {
+  border-bottom:none;
+}
+
+/* bottom section
+ oh god why didn't I use LESS :( */
+.bottom {
+  margin-top:40px;
+}
+.bottom h2 {
+  text-align:center;
+}
+.bottom .control-label {
+  width:120px;
+}
+.bottom .control-group {
+  margin-right: 20px;
+}
+.bottom .controls {
+  margin-left:140px;
+}
+.bottom input, .bottom textarea {
+  width: 100%;
+}
+.bottom textarea {
+  height:200px;
+}
+.bottom button {
+  float: right;
+}
